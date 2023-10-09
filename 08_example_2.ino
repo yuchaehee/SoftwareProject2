@@ -57,7 +57,7 @@ void loop() {
       brightness = map(distance, 100, 200, 255, 0);
       analogWrite(PIN_LED, brightness);
     } else if (distance>200.0 && distance<300.0) {
-      brightness = map(distance, 200, 300, 0, 25);
+      brightness = map(distance, 200, 300, 0, 255);
       analogWrite(PIN_LED, brightness);
     }
   }
